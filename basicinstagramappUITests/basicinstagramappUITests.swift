@@ -1,9 +1,4 @@
-//
-//  basicinstagramappUITests.swift
-//  basicinstagramappUITests
-//
-//  Created by kenan on 7/3/25.
-//
+
 
 import XCTest
 

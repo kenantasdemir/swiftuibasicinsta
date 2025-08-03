@@ -1,24 +1,27 @@
-//
-//  ContentView.swift
-//  basicinstagramapp
-//
-//  Created by kenan on 7/3/25.
-//
+
 
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var authViewModel = AuthViewModel()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        switch authViewModel.authState {
+        case .login:
+            NavigationStack {
+                LoginView(authViewModel: authViewModel)
+            }
+        case .register:
+            NavigationStack {
+                RegisterView(authViewModel: authViewModel)
+            }
+        case .signedIn:
+            MainTabView(authViewModel: authViewModel) 
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
 }
+

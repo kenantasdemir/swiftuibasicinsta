@@ -1,17 +1,27 @@
-//
-//  basicinstagramappApp.swift
-//  basicinstagramapp
-//
-//  Created by kenan on 7/3/25.
-//
+
 
 import SwiftUI
+import FirebaseCore
 
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    FirebaseApp.configure()
+
+    return true
+  }
+}
 @main
 struct basicinstagramappApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+    
+  
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+
+      var body: some Scene {
+          WindowGroup {
+              ContentView()
+          }
+      }
 }

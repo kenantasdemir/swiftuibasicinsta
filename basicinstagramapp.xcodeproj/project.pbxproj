@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6E4F91822E1706E100E24587 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4F91812E1706E100E24587 /* FirebaseAuth */; };
+		6E4F91842E1706E100E24587 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4F91832E1706E100E24587 /* FirebaseCore */; };
+		6E4F91862E1706E100E24587 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4F91852E1706E100E24587 /* FirebaseDatabase */; };
+		6E4F91882E1706E100E24587 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4F91872E1706E100E24587 /* FirebaseFirestore */; };
+		6E4F918A2E1706E100E24587 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4F91892E1706E100E24587 /* FirebaseMessaging */; };
+		6E4F918C2E1706E100E24587 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4F918B2E1706E100E24587 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6E4F91612E1700F100E24587 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +38,22 @@
 		6E4F916A2E1700F100E24587 /* basicinstagramappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = basicinstagramappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6E4F91B32E17452500E24587 /* Exceptions for "basicinstagramapp" folder in "basicinstagramapp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6E4F914F2E1700EE00E24587 /* basicinstagramapp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6E4F91522E1700EE00E24587 /* basicinstagramapp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6E4F91B32E17452500E24587 /* Exceptions for "basicinstagramapp" folder in "basicinstagramapp" target */,
+			);
 			path = basicinstagramapp;
 			sourceTree = "<group>";
 		};
@@ -52,6 +74,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4F91862E1706E100E24587 /* FirebaseDatabase in Frameworks */,
+				6E4F91882E1706E100E24587 /* FirebaseFirestore in Frameworks */,
+				6E4F918A2E1706E100E24587 /* FirebaseMessaging in Frameworks */,
+				6E4F91842E1706E100E24587 /* FirebaseCore in Frameworks */,
+				6E4F91822E1706E100E24587 /* FirebaseAuth in Frameworks */,
+				6E4F918C2E1706E100E24587 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +140,12 @@
 			);
 			name = basicinstagramapp;
 			packageProductDependencies = (
+				6E4F91812E1706E100E24587 /* FirebaseAuth */,
+				6E4F91832E1706E100E24587 /* FirebaseCore */,
+				6E4F91852E1706E100E24587 /* FirebaseDatabase */,
+				6E4F91872E1706E100E24587 /* FirebaseFirestore */,
+				6E4F91892E1706E100E24587 /* FirebaseMessaging */,
+				6E4F918B2E1706E100E24587 /* FirebaseStorage */,
 			);
 			productName = basicinstagramapp;
 			productReference = 6E4F91502E1700EE00E24587 /* basicinstagramapp.app */;
@@ -195,6 +229,9 @@
 			);
 			mainGroup = 6E4F91472E1700EE00E24587;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6E4F917D2E17040100E24587 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6E4F91512E1700EE00E24587 /* Products */;
 			projectDirPath = "";
@@ -398,6 +435,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"basicinstagramapp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = basicinstagramapp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -426,6 +464,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"basicinstagramapp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = basicinstagramapp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -552,6 +591,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6E4F917D2E17040100E24587 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6E4F91812E1706E100E24587 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E4F917D2E17040100E24587 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		6E4F91832E1706E100E24587 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E4F917D2E17040100E24587 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		6E4F91852E1706E100E24587 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E4F917D2E17040100E24587 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		6E4F91872E1706E100E24587 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E4F917D2E17040100E24587 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6E4F91892E1706E100E24587 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E4F917D2E17040100E24587 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		6E4F918B2E1706E100E24587 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E4F917D2E17040100E24587 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6E4F91482E1700EE00E24587 /* Project object */;
 }
